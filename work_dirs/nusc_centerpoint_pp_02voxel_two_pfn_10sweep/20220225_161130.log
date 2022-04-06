@@ -1,2 +1,0 @@
-2022-02-25 16:11:30,198 - INFO - Start running, host: mmcom@9480349158e1, work_dir: /home/mmcom/neural-nets/CenterPoint/work_dirs/nusc_centerpoint_pp_02voxel_two_pfn_10sweep
-2022-02-25 16:11:30,199 - INFO - workflow: [('train', 1)], max: 20 epochs
