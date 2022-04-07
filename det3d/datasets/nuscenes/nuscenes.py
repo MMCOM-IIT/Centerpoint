@@ -77,8 +77,9 @@ class NuScenesDataset(PointCloudDataset):
 
         with open(self._info_path, "rb") as f:
             _nusc_infos_all = pickle.load(f)
-
+        print(self.__dict__)
         _nusc_infos_all = _nusc_infos_all[::self.load_interval]
+       
 
         if not self.test_mode:  # if training
             self.frac = int(len(_nusc_infos_all) * 0.25)
@@ -178,7 +179,7 @@ class NuScenesDataset(PointCloudDataset):
             },
             "calib": None,
             "cam": {},
-            "mode": "val" if self.test_mode else "train",
+            "mode": "test" if self.test_mode else "train", #change test for val
             "virtual": self.virtual 
         }
 
